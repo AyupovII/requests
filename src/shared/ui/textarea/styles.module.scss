@@ -1,0 +1,11 @@
+.textarea{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  textarea{
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid $gray;
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,31 @@
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+
+  th, td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid $gray;
+  }
+
+  th {
+    background-color: $gray;
+    color: #fff;
+  }
+
+  td {
+    color: $black;
+  }
+  tr{
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover{
+      background-color: $gray-light;
+    }
+  }
+}

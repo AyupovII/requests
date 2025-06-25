@@ -1,0 +1,16 @@
+.requests {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.requestsList{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.request{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr;
+  gap: 10px;
+}
