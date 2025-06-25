@@ -2,7 +2,7 @@ import { TRequest } from "@/types";
 import { makeAutoObservable } from "mobx";
 
 export class RequestsStore {
-  requests: TRequest[] = [{id: '1', title: 'Заявка 1', description: 'Описание заявки 1', status: 'New', date: new Date().toISOString()}];
+  requests: TRequest[] = [];
 
   constructor() {
     makeAutoObservable(this);
@@ -29,8 +29,6 @@ export class RequestsStore {
   }
 
   getRequest(id: string) {
-    console.log("Ищу id:", id);
-    console.log("В списке заявок:", this.requests.map(r => r.id));
     return this.requests.find(request => request.id === id);
   }
 

@@ -9,7 +9,7 @@ export enum RequestStatus {
 export interface TRequest {
   id: string;
   title: string;
-  description?: string;
+  description: string;
   status: RequestStatus;
   date: string;
 }

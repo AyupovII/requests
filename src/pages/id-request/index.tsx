@@ -1,6 +1,6 @@
 import { RequestName, TRequest } from '@/types';
 import { observer } from 'mobx-react-lite';
-import { data, useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import styles from './styles.module.scss';
 import { requestStore } from '@/entities/request/store';
 import { Button } from '@/shared/ui/button';

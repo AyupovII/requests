@@ -1,4 +1,4 @@
-import { FC, useId, useState } from 'react';
+import { FC, useState } from 'react';
 import styles from './styles.module.scss';
 import { Select } from '@/shared/ui/select';
 import { statusOptions } from '@/shared/utils';

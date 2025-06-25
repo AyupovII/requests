@@ -8,13 +8,12 @@ import { Header } from "@/widgets/header";
 import { Footer } from "@/widgets/footer";
 import { NewRequest } from "@/pages/new-request";
 import { IdRequest } from "@/pages/id-request";
-import { use, useEffect } from "react";
+import { useEffect } from "react";
 import { requestStore } from "@/entities/request/store";
 import { Breadcrumbs } from "@/widgets/breadcrumbs";
 
 function App() {
   const location = useLocation();
-  console.log(location.pathname);
 
   useEffect(() => {
     requestStore.loadRequests();
