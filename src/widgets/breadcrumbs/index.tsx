@@ -21,15 +21,13 @@ export const Breadcrumbs: FC = () => {
         const path = `/requests/${pathnames.slice(1, index + 2).join('/')}`;
         const isLast = index === pathnames.length - 2;
 
-        const label = segment
-
         return (
           <span key={path}>
             <span className={styles.separator}> / </span>
             {isLast ? (
-              <span className={styles.current}>{label}</span>
+              <span className={styles.current}>{segment}</span>
             ) : (
-              <Link className={styles.link} to={path}>{label}</Link>
+              <Link className={styles.link} to={path}>{segment}</Link>
             )}
           </span>
         );
