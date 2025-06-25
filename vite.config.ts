@@ -4,6 +4,9 @@ import path from 'path';
 
 export default defineConfig({
   base: '/requests/',
+  build: {
+    outDir: 'dist'
+  },
   plugins: [react()],
   resolve: {
     alias: {
