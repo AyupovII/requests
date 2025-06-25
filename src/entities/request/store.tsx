@@ -27,6 +27,9 @@ export class RequestsStore {
   removeRequest(id: string) {
     this.requests = this.requests.filter(request => request.id !== id);
   }
+  changeRequest(request: TRequest) {
+    this.requests = this.requests.map(req => req.id === request.id ? request : req);
+  }
 
   getRequest(id: string) {
     return this.requests.find(request => request.id === id);

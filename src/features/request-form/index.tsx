@@ -60,7 +60,7 @@ export const RequestForm: FC<RequestFormProps> = ({ onSubmit, data }) => {
           onChange={handleStatusChange}
           id="status"
           name="status" />
-        <Button type="submit" variant="primary" size="large">{isNew ? 'Создать' : 'Редактировать'}</Button>
+        <Button type="submit" variant="primary" size="large">{isNew ? 'Создать' : 'Cохранить изменения'}</Button>
       </div>
     </form>
   );

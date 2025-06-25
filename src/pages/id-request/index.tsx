@@ -20,6 +20,11 @@ export const IdRequest: React.FC = observer(() => {
     navigate('/');
   }
 
+  const onSubmit = (data: TRequest) => {
+    requestStore.changeRequest(data);
+    setIsOpen(false);
+  }
+
   if (!currentRequest) {
     return null;
   }
@@ -47,7 +52,7 @@ export const IdRequest: React.FC = observer(() => {
         <Button variant="secondary" onClick={() => { setIsOpen(true) }}>Редактировать заявку</Button>
       </div>
       <Modal isOpen={isOpen} onClose={() => { setIsOpen(false) }}>
-        <RequestForm data={currentRequest} onSubmit={(data: TRequest) => requestStore.addRequest(data)} />
+        <RequestForm data={currentRequest} onSubmit={onSubmit} />
       </Modal>
     </div>
   )
